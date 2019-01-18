@@ -3,23 +3,30 @@
     .center;
     flex-direction: column;
     width: 100%;
+    background-color: #F1F1F1;
 }
     h1 {
-        font-size:  3.25rem;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        font-size:  4rem;
+        padding-top: 12px;
+        padding-bottom: 20px;
     }
     
     nav {
         display: flex;
         width: 30%;
         justify-content: space-between;
+        font-weight: 600;
 
         @media @tablet {
             width: 50%;
         }
+
+        @media @mobile {
+            width: 100%;
+            justify-content: space-around;
+        }
         a {
-            padding-bottom: 5px;
+            padding-bottom: 13px;
             text-decoration: none;
             font-size: 1.5rem;
             color: black;
