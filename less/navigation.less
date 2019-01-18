@@ -1,1 +1,27 @@
 // Navigation code here
+.top {
+    .center;
+    flex-direction: column;
+    width: 100%;
+}
+    h1 {
+        font-size:  3.25rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    nav {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+
+        @media @tablet {
+            width: 50%;
+        }
+        a {
+            padding-bottom: 5px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+        }
+    }
