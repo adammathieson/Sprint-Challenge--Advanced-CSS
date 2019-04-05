@@ -1,1 +1,34 @@
 // Mixins Here
+.custom-btn(@width: 100px, @height: 45px, @bgcolor: gray, @font-color: white, @font-size: 20px, @font-weight: 500) {
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
+    color: @font-color;
+    font-size: @font-size;
+    font-weight: @font-weight;
+    padding: 3%;
+    border-radius: 5px;
+    border: 1px solid @font-color;
+    .center;
+    cursor: pointer;
+    // margin: 20px 0;
+
+    @media @mobile {
+        width: 100%;
+        height: 60px;
+        font-size: 1.55rem;
+    }
+
+    &:hover {
+        //background-color: @font-color;
+        background-color: @font-color;
+        color: @bgcolor;
+        border: 1px solid @bgcolor;
+        }
+    }
+
+    .center() {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
